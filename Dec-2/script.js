@@ -29,9 +29,7 @@ import { readFileSync } from 'fs';
 
 let score = []
 
-const playGame = (array, sum) => {
-
-    console.log(array)
+const playGame = (array, score) => {
 
     const [opponentsMove, myMove] = array
 
@@ -104,7 +102,7 @@ for (let i = 0; i < array.length; i++) {
     playGame(subArray, score)
 }
 
-let addScore = score.reduce((partialSum, a) =>
-    partialSum + a, 0)
+let addScore = score.reduce((sum, a) =>
+    sum + a, 0)
 console.log(addScore)
 console.log(score)
