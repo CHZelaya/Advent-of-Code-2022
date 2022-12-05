@@ -20,8 +20,10 @@ import { readFileSync } from 'fs';
 
 //Todo_________________________
 //? Step 1: Build an object that holds the values of each playable hand and its values.
-//? Step 1: Write a function that takes two arguments, opponents hand and my hand
-//? Step 2: Compare the two arguments against each other and return win/loss/draw
+//? Step 2: Write a function that takes two arguments, array of moves and empty score array
+//? Step 3: Compare the two arguments against each other and return win/loss/draw
+//? Step 4: Store results into empty array and add numbers together
+
 
 
 
@@ -30,6 +32,9 @@ import { readFileSync } from 'fs';
 let score = []
 
 const playGame = (array, score) => {
+
+    console.log(array)
+=======
 
     const [opponentsMove, myMove] = array
 
@@ -89,11 +94,6 @@ const playGame = (array, score) => {
 
 }
 
-
-
-
-
-
 const puzzle = readFileSync('./puzzle-input.txt', 'utf8');
 const array = puzzle.split('\r\n')
 for (let i = 0; i < array.length; i++) {
@@ -102,7 +102,14 @@ for (let i = 0; i < array.length; i++) {
     playGame(subArray, score)
 }
 
+
+let addScore = score.reduce((partialSum, a) =>
+    partialSum + a, 0)
+
+console.log(addScore)
+=======
 let addScore = score.reduce((sum, a) =>
     sum + a, 0)
 console.log(addScore)
 console.log(score)
+
