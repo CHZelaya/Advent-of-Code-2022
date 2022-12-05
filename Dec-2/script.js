@@ -34,6 +34,7 @@ let score = []
 const playGame = (array, score) => {
 
     console.log(array)
+=======
 
     const [opponentsMove, myMove] = array
 
@@ -101,7 +102,14 @@ for (let i = 0; i < array.length; i++) {
     playGame(subArray, score)
 }
 
+
 let addScore = score.reduce((partialSum, a) =>
     partialSum + a, 0)
 
 console.log(addScore)
+=======
+let addScore = score.reduce((sum, a) =>
+    sum + a, 0)
+console.log(addScore)
+console.log(score)
+
