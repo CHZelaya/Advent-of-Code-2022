@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Advent of Code 2022 Dec 3 puzzle",
   "main": "script.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon script.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/CHZelaya/Advent-of-Code-2022/issues"
   },
-  "homepage": "https://github.com/CHZelaya/Advent-of-Code-2022#readme"
+  "homepage": "https://github.com/CHZelaya/Advent-of-Code-2022#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
