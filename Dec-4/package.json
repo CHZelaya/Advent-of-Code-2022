@@ -1,0 +1,24 @@
+{
+  "name": "advent-of-code-2022",
+  "version": "1.0.0",
+  "description": "Advent of Code 2022 Day 4",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHZelaya/Advent-of-Code-2022.git"
+  },
+  "author": "Carlos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CHZelaya/Advent-of-Code-2022/issues"
+  },
+  "homepage": "https://github.com/CHZelaya/Advent-of-Code-2022#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
